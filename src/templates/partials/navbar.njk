@@ -20,14 +20,14 @@
         <ul class="dropdown-menu dropdown-menu-right dropdown-menu-large">
           <li class="dropdown-item dropdown-header">Messages</li>
           <li class="dropdown-item"><a href="" class="dropdown-link dropdown-media">
-            <img src="../images/user-2.jpg" alt="" class="dropdown-image">
+            <img src="{% if publicPath %}/{{ publicPath }}/images/user-2.jpg{% else %}../images/user-2.jpg{% endif %}" alt="" class="dropdown-image">
             <div class="dropdown-media-text">
               <span class="dropdown-media-content">Hello, please check my jo...</span>
               <small class="dropdown-media-helper">Reinhard - 2 minutes ago</small>
             </div>
           </a></li>
           <li class="dropdown-item"><a href="" class="dropdown-link dropdown-media">
-            <img src="../images/user-1.jpg" alt="" class="dropdown-image">
+            <img src="{% if publicPath %}/{{ publicPath }}/images/user-1.jpg{% else %}../images/user-1.jpg{% endif %}" alt="" class="dropdown-image">
             <div class="dropdown-media-text">
               <span class="dropdown-media-content">I want us to meet now...</span>
               <small class="dropdown-media-helper">Ferdi - 12 minutes ago</small>
@@ -60,7 +60,7 @@
       <li class="col navbar-divider"></li>
       <li class="col dropdown">
         <a href="" class="dropdown-toggle">
-          <img src="../images/user-1.jpg" alt="" class="navbar-img">
+          <img src="{% if publicPath %}/{{ publicPath }}/images/user-1.jpg{% else %}../images/user-1.jpg{% endif %}" alt="" class="navbar-img">
         </a>
         <ul class="dropdown-menu dropdown-menu-right">
           <li class="dropdown-item"><a href="" class="dropdown-link">

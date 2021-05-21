@@ -6,6 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development gulp dev",
     "prod": "NODE_ENV=production gulp",
+    "doc": "NODE_ENV=production gulp doc",
     "dev": "NODE_ENV=development gulp"
   },
   "keywords": [],

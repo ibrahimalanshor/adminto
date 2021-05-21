@@ -14,6 +14,13 @@ const css = () => {
     .pipe(dest('dist/css'))
 }
 
+const cssDoc = () => {
+  return src('src/css/style.css')
+    .pipe(postcss())
+    .pipe(cleanCSS())
+    .pipe(dest('docs/css'))
+}
+
 const js = () => {
   return src('src/js/*.js')
     .pipe(concat('script.js'))
@@ -22,6 +29,16 @@ const js = () => {
     }))
     .pipe(uglify())
     .pipe(dest('dist/js'))
+}
+
+const jsDoc = () => {
+  return src('src/js/*.js')
+    .pipe(concat('script.js'))
+    .pipe(babel({
+      presets: ['@babel/preset-env']
+    }))
+    .pipe(uglify())
+    .pipe(dest('docs/js'))
 }
 
 const html = () => {
@@ -33,9 +50,26 @@ const html = () => {
     .pipe(dest('dist/pages'))
 }
 
+const htmlDoc = () => {
+  return src('./src/pages/**/*.njk')
+    .pipe(data(() => ({
+      menus: require('./menu.json'),
+      publicPath: 'adminto'
+    })))
+    .pipe(nunjucks({
+      path: ['src/templates']
+    }))
+    .pipe(dest('docs'))
+}
+
 const image = () => {
   return src('./src/images/**/*')
     .pipe(dest('dist/images'))
+}
+
+const imageDoc = () => {
+  return src('./src/images/**/*')
+    .pipe(dest('docs/images'))
 }
 
 const devHtml = () => {
@@ -61,5 +95,6 @@ exports.image = image
 exports.devHtml = devHtml
 exports.devScript = devScript
 exports.dev = dev
+exports.doc = parallel(cssDoc, jsDoc, htmlDoc, imageDoc)
 
 exports.default = parallel(css, js, html, image)

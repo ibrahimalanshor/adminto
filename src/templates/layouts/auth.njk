@@ -11,7 +11,7 @@
 
   {% block content %} {% endblock %}
 
-  <script src="../js/script.js"></script>
+  <script src="{% if publicPath %}/{{ publicPath }}/js/script.js{% else %}../js/script.js{% endif %}"></script>
     
   {% block js %} {% endblock %}
 
