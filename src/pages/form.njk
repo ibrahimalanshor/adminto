@@ -1,0 +1,179 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Form {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='form', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Form</h1>
+    <p class="main-subtitle">Guide to creating form</p>
+  </div>
+
+  <div class="row">
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Basic Form</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Basic Input</label>
+            <input type="text" class="input" placeholder="Basic Input">
+          </div>
+          <div class="form">
+            <div class="input-helper">
+              <label>Input Helper</label>
+              <span class="input-helper-text">Helper for human</span>
+            </div>
+            <input type="text" class="input" placeholder="Input Helper">
+            <span class="form-text">Fill this out</span>
+          </div>
+          <div class="form">
+            <label>Disabled Input</label>
+            <input type="text" class="input" placeholder="Disabled Input" disabled>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="button button-blue">Button</button>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Validation Form</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Error Input</label>
+            <input type="text" class="input input-error" placeholder="Basic Input">
+            <span class="form-text text-error">Fill this out</span>
+          </div>
+          <div class="form">
+            <label>Success Input</label>
+            <input type="text" class="input input-success" placeholder="Basic Input">
+            <span class="form-text text-success">Fill this out</span>
+          </div>
+          <div class="form">
+            <label>Warning Input</label>
+            <input type="text" class="input input-warning" placeholder="Basic Input">
+            <span class="form-text text-warning">Fill this out</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="button button-blue">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Form Components</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Input</label>
+            <input type="text" class="input" placeholder="Basic Input">
+          </div>
+          <div class="form">
+            <label>Textarea</label>
+            <textarea class="input" placeholder="Textarea"></textarea>
+          </div>
+          <div class="form">
+            <label>Select</label>
+            <select class="input">
+              <option value="">Option 1</option>
+              <option value="">Option 2</option>
+            </select>
+          </div>
+          <div class="form form-checkbox">
+            <label class="checkbox-label">Checkbox</label>
+            <label class="checkbox-control">
+              <input type="checkbox" class="checkbox-input" name="checkbox" checked="">
+              <div class="checkbox-box">
+                <span>Checkbox 1</span>
+              </div>
+            </label>
+            <label class="checkbox-control">
+              <input type="checkbox" class="checkbox-input" name="checkbox">
+              <div class="checkbox-box">
+                <span>Checkbox 2</span>
+              </div>
+            </label>
+          </div>
+          <div class="form">
+            <label class="radio-label">Radio</label>
+            <label class="radio-control">
+              <input type="radio" name="radio" class="radio-input" checked>
+              <div class="radio-box">
+                <span>Radio 1</span>
+              </div>
+            </label>
+            <label class="radio-control">
+              <input type="radio" class="radio-input" name="radio">
+              <div class="radio-box">
+                <span>Radio 2</span>
+              </div>
+            </label>
+          </div>
+          <div class="form">
+            <label>Input File</label>
+            <div>
+              <label for="file" class="file-input-label">
+                <div class="file-input-text">Upload</div>
+                <div class="file-input-upload">Browse File</div>
+              </label>
+              <input type="file" id="file" class="file-input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Form Layout</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Input Append</label>
+            <div class="input-append">
+              <div class="input-append-text">+62</div>
+              <input type="text" class="input" placeholder="Input Append">
+            </div>
+          </div>
+          <div class="form">
+            <label>Input Prepend</label>
+            <div class="input-prepend mt-2">
+              <input type="text" class="input" placeholder="Input Prepend">
+              <div class="input-prepend mt-2-text">,00</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col w-1/2">
+              <div class="form">
+                <label>Input Row</label>
+                <input type="text" class="input" placeholder="Basic Input">
+              </div>
+            </div>
+            <div class="col w-1/2">
+              <div class="form">
+                <label>Input Row</label>
+                <input type="text" class="input" placeholder="Basic Input">
+              </div>
+            </div>
+          </div>
+
+          <div class="form">
+            <label>Button Group</label>
+            <div class="input-prepend mt-2">
+              <input type="text" class="input" placeholder="Basic Input">
+              <button class="button button-blue">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

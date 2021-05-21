@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../images/favicon/favicon.ico">
+
+  <title> Form </title>
+
+   
+
+</head>
+<body>
+
+  
+
+<nav class="navbar">
+  <a href="" class="navbar-brand">Adminto</a>
+  <button class="navbar-toggle">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="navbar-right">
+    <form action="" class="navbar-form">
+      <input type="text" class="input" placeholder="Search">
+    </form>
+    <button class="navbar-toggle-form toggle-collapse" data-target="#search">
+      <i class="fa fa-search navbar-icon"></i>
+    </button>
+    <ul class="row navbar-row">
+      <li class="col dropdown">
+        <a class="dropdown-toggle" href="">
+          <i class="fa fa-comment navbar-icon"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-large">
+          <li class="dropdown-item dropdown-header">Messages</li>
+          <li class="dropdown-item"><a href="" class="dropdown-link dropdown-media">
+            <img src="../images/user-2.jpg" alt="" class="dropdown-image">
+            <div class="dropdown-media-text">
+              <span class="dropdown-media-content">Hello, please check my jo...</span>
+              <small class="dropdown-media-helper">Reinhard - 2 minutes ago</small>
+            </div>
+          </a></li>
+          <li class="dropdown-item"><a href="" class="dropdown-link dropdown-media">
+            <img src="../images/user-1.jpg" alt="" class="dropdown-image">
+            <div class="dropdown-media-text">
+              <span class="dropdown-media-content">I want us to meet now...</span>
+              <small class="dropdown-media-helper">Ferdi - 12 minutes ago</small>
+            </div>
+          </a></li>
+        </ul>
+      </li>
+      <li class="col dropdown">
+        <a href="" class="dropdown-toggle">
+          <i class="fa fa-bell navbar-icon"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-large">
+          <li class="dropdown-header">Notification</li>
+          <li class="dropdown-item"><a href="" class="dropdown-link">
+            <i class="fa fa-file-alt dropdown-icon text-red-600"></i>
+            <div class="dropdown-media-text">
+              <small class="dropdown-media-helper">5 minutes ago</small>
+              <span class="dropdown-media-content">Rumina made a new feature</span>
+            </div>
+          </a></li>
+          <li class="dropdown-item"><a href="" class="dropdown-link">
+            <i class="fa fa-sign-out-alt dropdown-icon text-green-600"></i>
+            <div class="dropdown-media-text">
+              <small class="dropdown-media-helper">5 minutes ago</small>
+              <span class="dropdown-media-content">Samir leaves the app</span>
+            </div>
+          </a></li>
+        </ul>
+      </li>
+      <li class="col navbar-divider"></li>
+      <li class="col dropdown">
+        <a href="" class="dropdown-toggle">
+          <img src="../images/user-1.jpg" alt="" class="navbar-img">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li class="dropdown-item"><a href="" class="dropdown-link">
+            <i class="fa fa-user text-gray-400 dropdown-icon"></i>
+            Profile
+          </a></li>
+          <li class="dropdown-item">
+            <a href="" class="dropdown-link flex modal-toggle" data-target="#logout">
+              <i class="fa fa-sign-out-alt text-gray-400 dropdown-icon"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="navbar-hidden-form input-prepend hidden" id="search">
+  <input type="text" class="input" placeholder="Search">
+  <button class="button button-blue">Search</button>
+</div>
+
+  
+  
+
+<aside class="sidebar">
+  
+    <ul class="sidebar-list">
+      <li class="sidebar-title">Menu</li>
+      
+        <li>
+          <a href="" class="sidebar-menu has-child   ">
+            <div>
+              <i class="fa fa-tachometer-alt sidebar-icon"></i>
+              Dashboard
+            </div>
+            
+              <i class="fa sidebar-caret fa-caret-right"></i>
+            
+          </a>
+          
+          <ul class="sidebar-child">
+            
+              <li>
+                <a href="dashboard-1.html" class="sidebar-menu ">
+                  <i class="far fa-circle w-7"></i>
+                  Dashboard V1
+                </a>
+              </li>
+            
+              <li>
+                <a href="dashboard-2.html" class="sidebar-menu ">
+                  <i class="far fa-circle w-7"></i>
+                  Dashboard V2
+                </a>
+              </li>
+            
+          </ul>
+          
+      </li>
+      
+    </ul>
+  
+    <ul class="sidebar-list">
+      <li class="sidebar-title">Components</li>
+      
+        <li>
+          <a href="button.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-square sidebar-icon"></i>
+              Button
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="card.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-archive sidebar-icon"></i>
+              Card
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="form.html" class="sidebar-menu  active  ">
+            <div>
+              <i class="fa fa-file-alt sidebar-icon"></i>
+              Form
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="alert.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-bell sidebar-icon"></i>
+              Alert
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="typography.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-file sidebar-icon"></i>
+              Typography
+            </div>
+            
+          </a>
+          
+      </li>
+      
+    </ul>
+  
+    <ul class="sidebar-list">
+      <li class="sidebar-title">UI Components</li>
+      
+        <li>
+          <a href="chart.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-chart-bar sidebar-icon"></i>
+              Chart
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="" class="sidebar-menu has-child   ">
+            <div>
+              <i class="fa fa-table sidebar-icon"></i>
+              Table
+            </div>
+            
+              <i class="fa sidebar-caret fa-caret-right"></i>
+            
+          </a>
+          
+          <ul class="sidebar-child">
+            
+              <li>
+                <a href="table.html" class="sidebar-menu ">
+                  <i class="far fa-circle w-7"></i>
+                  Basic Table
+                </a>
+              </li>
+            
+              <li>
+                <a href="datatable.html" class="sidebar-menu ">
+                  <i class="far fa-circle w-7"></i>
+                  Data Table
+                </a>
+              </li>
+            
+          </ul>
+          
+      </li>
+      
+    </ul>
+  
+    <ul class="sidebar-list">
+      <li class="sidebar-title">Theme</li>
+      
+        <li>
+          <a href="navbar.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-window-maximize sidebar-icon"></i>
+              Navbar
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="sidebar.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-tasks sidebar-icon"></i>
+              Sidebar
+            </div>
+            
+          </a>
+          
+      </li>
+      
+    </ul>
+  
+    <ul class="sidebar-list">
+      <li class="sidebar-title">Pages</li>
+      
+        <li>
+          <a href="login.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-door-open sidebar-icon"></i>
+              Login
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="register.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-door-closed sidebar-icon"></i>
+              Register
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="blank.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-sticky-note sidebar-icon"></i>
+              Blank
+            </div>
+            
+          </a>
+          
+      </li>
+      
+        <li>
+          <a href="not-found.html" class="sidebar-menu    ">
+            <div>
+              <i class="fa fa-exclamation-triangle sidebar-icon"></i>
+              Not Found
+            </div>
+            
+          </a>
+          
+      </li>
+      
+    </ul>
+  
+</aside>
+
+
+
+
+  <main class="main">
+    
+  <div class="main-header">
+    <h1 class="h2 main-title">Form</h1>
+    <p class="main-subtitle">Guide to creating form</p>
+  </div>
+
+  <div class="row">
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Basic Form</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Basic Input</label>
+            <input type="text" class="input" placeholder="Basic Input">
+          </div>
+          <div class="form">
+            <div class="input-helper">
+              <label>Input Helper</label>
+              <span class="input-helper-text">Helper for human</span>
+            </div>
+            <input type="text" class="input" placeholder="Input Helper">
+            <span class="form-text">Fill this out</span>
+          </div>
+          <div class="form">
+            <label>Disabled Input</label>
+            <input type="text" class="input" placeholder="Disabled Input" disabled>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="button button-blue">Button</button>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Validation Form</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Error Input</label>
+            <input type="text" class="input input-error" placeholder="Basic Input">
+            <span class="form-text text-error">Fill this out</span>
+          </div>
+          <div class="form">
+            <label>Success Input</label>
+            <input type="text" class="input input-success" placeholder="Basic Input">
+            <span class="form-text text-success">Fill this out</span>
+          </div>
+          <div class="form">
+            <label>Warning Input</label>
+            <input type="text" class="input input-warning" placeholder="Basic Input">
+            <span class="form-text text-warning">Fill this out</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="button button-blue">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Form Components</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Input</label>
+            <input type="text" class="input" placeholder="Basic Input">
+          </div>
+          <div class="form">
+            <label>Textarea</label>
+            <textarea class="input" placeholder="Textarea"></textarea>
+          </div>
+          <div class="form">
+            <label>Select</label>
+            <select class="input">
+              <option value="">Option 1</option>
+              <option value="">Option 2</option>
+            </select>
+          </div>
+          <div class="form form-checkbox">
+            <label class="checkbox-label">Checkbox</label>
+            <label class="checkbox-control">
+              <input type="checkbox" class="checkbox-input" name="checkbox" checked="">
+              <div class="checkbox-box">
+                <span>Checkbox 1</span>
+              </div>
+            </label>
+            <label class="checkbox-control">
+              <input type="checkbox" class="checkbox-input" name="checkbox">
+              <div class="checkbox-box">
+                <span>Checkbox 2</span>
+              </div>
+            </label>
+          </div>
+          <div class="form">
+            <label class="radio-label">Radio</label>
+            <label class="radio-control">
+              <input type="radio" name="radio" class="radio-input" checked>
+              <div class="radio-box">
+                <span>Radio 1</span>
+              </div>
+            </label>
+            <label class="radio-control">
+              <input type="radio" class="radio-input" name="radio">
+              <div class="radio-box">
+                <span>Radio 2</span>
+              </div>
+            </label>
+          </div>
+          <div class="form">
+            <label>Input File</label>
+            <div>
+              <label for="file" class="file-input-label">
+                <div class="file-input-text">Upload</div>
+                <div class="file-input-upload">Browse File</div>
+              </label>
+              <input type="file" id="file" class="file-input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Form Layout</h2>
+        </div>
+        <div class="card-body">
+          <div class="form">
+            <label>Input Append</label>
+            <div class="input-append">
+              <div class="input-append-text">+62</div>
+              <input type="text" class="input" placeholder="Input Append">
+            </div>
+          </div>
+          <div class="form">
+            <label>Input Prepend</label>
+            <div class="input-prepend mt-2">
+              <input type="text" class="input" placeholder="Input Prepend">
+              <div class="input-prepend mt-2-text">,00</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col w-1/2">
+              <div class="form">
+                <label>Input Row</label>
+                <input type="text" class="input" placeholder="Basic Input">
+              </div>
+            </div>
+            <div class="col w-1/2">
+              <div class="form">
+                <label>Input Row</label>
+                <input type="text" class="input" placeholder="Basic Input">
+              </div>
+            </div>
+          </div>
+
+          <div class="form">
+            <label>Button Group</label>
+            <div class="input-prepend mt-2">
+              <input type="text" class="input" placeholder="Basic Input">
+              <button class="button button-blue">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <div class="modal" id="logout">
+  <div class="modal-backdrop"></div>
+  <div class="modal-dialog">
+    <div class="modal-body sm:w-1/2 md:w-1/3">
+      <div class="card">
+        <div class="card-header card-addons">
+          <h2 class="h6">Modal</h2>
+          <button class="modal-close"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="card-body">
+          <p>
+            Are you sure to logout ?
+          </p>
+        </div>
+        <div class="card-footer card-footer-right">
+          <div>
+            <button class="button button-red">Logout</button>
+            <button class="button button-black modal-close">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/script.js"></script>
+    
+   
+
+</body>
+</html>

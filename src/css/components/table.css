@@ -1,0 +1,12 @@
+.table {
+  @apply w-full;
+}
+.table th, .table td {
+  @apply p-4 border;
+}
+.table th {
+  @apply text-left;
+}
+.table-striped tbody tr:nth-child(odd), .table-hover tbody tr:hover {
+  @apply bg-gray-100;
+}

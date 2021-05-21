@@ -1,0 +1,9 @@
+@layer base {
+  body {
+    @apply text-gray-600 bg-gray-100;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  body.auth {
+    @apply h-screen flex items-center;
+  }
+}

@@ -1,0 +1,16 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Not Found {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='not-found', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">404 Not Found</h1>
+    <p class="main-subtitle">Your requested page not found</p>
+  </div>
+{% endblock %}

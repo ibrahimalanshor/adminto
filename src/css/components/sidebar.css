@@ -1,0 +1,39 @@
+.sidebar {
+  @apply w-72 hidden h-screen bg-gray-900 text-gray-400 flex-shrink-0 pt-20 px-3 flex-shrink-0 fixed top-0 left-0 overflow-y-scroll;
+}
+.sidebar-white {
+  @apply bg-white text-gray-600;
+}
+.sidebar-list {
+  @apply mb-5;
+}
+.sidebar-title, .sidebar-menu {
+  @apply block px-4 py-2 mb-2 rounded;
+}
+.sidebar-title {
+  @apply uppercase font-bold text-sm text-gray-400;
+}
+.sidebar-menu.has-child {
+  @apply flex items-center justify-between;
+}
+.sidebar-menu:hover, .sidebar-menu.active {
+  @apply bg-blue-700 text-white;
+}
+.sidebar-icon {
+  @apply w-7;
+}
+.sidebar-child {
+  @apply hidden;
+}
+.sidebar-menu.open + .sidebar-child {
+  @apply block;
+}
+.sidebar-child .sidebar-menu:hover, .sidebar-child .sidebar-menu.active {
+  @apply bg-gray-700 text-gray-100;
+}
+
+@screen sm {
+  .sidebar {
+    @apply block;
+  }
+}

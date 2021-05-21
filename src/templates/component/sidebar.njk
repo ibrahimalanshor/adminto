@@ -1,0 +1,36 @@
+{% macro sidebar(active, parent, menus) %}
+
+<aside class="sidebar">
+  {% for menu in menus %}
+    <ul class="sidebar-list">
+      <li class="sidebar-title">{{ menu.title }}</li>
+      {% for items in menu.items %}
+        <li>
+          <a href="{{ items.link }}" class="sidebar-menu {{ 'has-child' if items.hasChild }} {{ 'active' if items.active === active }} {{ 'active' if items.active === parent }} {{ 'open' if items.active === parent }}">
+            <div>
+              <i class="fa fa-{{ items.icon }} sidebar-icon"></i>
+              {{ items.title }}
+            </div>
+            {% if items.hasChild %}
+              <i class="fa sidebar-caret fa-caret-right"></i>
+            {% endif %}
+          </a>
+          {% if items.hasChild %}
+          <ul class="sidebar-child">
+            {% for child in items.childs %}
+              <li>
+                <a href="{{ child.link }}" class="sidebar-menu {{ 'active' if child.active === active }}">
+                  <i class="far fa-circle w-7"></i>
+                  {{ child.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</aside>
+
+{% endmacro %}

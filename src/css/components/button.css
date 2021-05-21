@@ -1,0 +1,27 @@
+.button {
+  @apply text-white px-4 py-2 rounded;
+}
+.button:disabled {
+  @apply opacity-50;
+}
+.button-small {
+  @apply text-sm px-3 py-1;
+}
+.button-large {
+  @apply px-5 py-3;
+}
+.button-blue {
+  @apply bg-blue-600;
+}
+.button-red {
+  @apply bg-red-600;
+}
+.button-yellow {
+  @apply bg-yellow-600;
+}
+.button-green {
+  @apply bg-green-600;
+}
+.button-black {
+  @apply bg-gray-800;
+}

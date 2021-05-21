@@ -1,0 +1,31 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Dropdown {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='dropdown', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Dropdown</h1>
+    <p class="main-subtitle">Simple dropdown</p>
+  </div>
+
+   <div class="card mb-4">
+     <div class="card-header">
+       <h2 class="h6">Modal</h2>
+     </div>
+     <div class="card-body">
+      <div class="dropdown">
+        <button class="button button-blue dropdown-toggle">Basic Dropdown</button>
+        <ul class="dropdown-menu left-0">
+          <li><a href="#" class="dropdown-item">Dropdown Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Dropdown Item 2</a></li>
+        </ul>
+      </div>
+     </div>
+   </div>
+{% endblock %}

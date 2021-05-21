@@ -1,0 +1,73 @@
+.navbar {
+  @apply h-16 bg-white shadow fixed top-0 left-0 w-full px-4 flex items-center z-10;
+}
+.navbar-dark {
+  @apply bg-gray-800 text-white;
+}
+.navbar-dark .navbar-brand {
+  @apply text-white;
+}
+.navbar-brand {
+  @apply text-lg text-gray-800 font-bold hidden w-72 px-8;
+}
+.navbar-toggle {
+  @apply mr-4;
+}
+.navbar-right {
+  @apply flex flex-grow items-center justify-end;
+}
+.navbar-form {
+  @apply w-72 hidden;
+}
+.navbar-toggle-form {
+  @apply mr-4;
+}
+.navbar-row {
+  @apply items-center;
+}
+.navbar-divider {
+  @apply h-8;
+}
+.navbar-divider:after {
+  content: '';
+  @apply h-full border-r block;
+}
+.navbar-img {
+  @apply w-8 h-8 object-cover rounded-full;
+}
+.navbar-icon {
+  @apply text-gray-300;
+}
+.navbar-icon:hover {
+  @apply text-gray-500;
+}
+.navbar-hidden-form {
+  @apply bg-white fixed top-16 left-0 w-full shadow p-4;
+}
+
+@screen sm {
+  .navbar {
+    @apply px-0;
+  }
+  .navbar-toggle {
+    @apply ml-8 mr-0;
+  }
+  .navbar-right {
+    @apply px-8 justify-between;
+  }
+  .navbar-form {
+    @apply block;
+  }
+  .navbar-toggle-form, .navbar-hidden-form {
+    @apply hidden;
+  }
+}
+
+@screen md {
+  .navbar-brand {
+    @apply block;
+  }
+  .navbar-toggle {
+    @apply hidden;
+  }
+}

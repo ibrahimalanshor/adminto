@@ -1,0 +1,45 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Alert {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='alert', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Alert</h1>
+    <p class="main-subtitle">Alert with multiple colors and dismissible alert</p>
+  </div>
+
+ <div class="row">
+   <div class="col w-full md:w-1/2 mb-4">
+     <div class="card mb-4">
+       <div class="card-header">
+         <h2 class="h6">Alert</h2>
+       </div>
+       <div class="card-body">
+         <div class="alert alert-red mb-2">Alert Red</div>
+         <div class="alert alert-blue mb-2">Alert Blue</div>
+         <div class="alert alert-green mb-2">Alert Green</div>
+         <div class="alert alert-yellow mb-2">Alert Yellow</div>
+       </div>
+     </div>
+   </div>
+   <div class="col w-full md:w-1/2 mb-4">
+     <div class="card mb-4">
+       <div class="card-header">
+         <h2 class="h6">Alert Dismisible</h2>
+       </div>
+       <div class="card-body">
+        <div class="alert alert-dismiss alert-red mb-2">
+          Alert Red
+          <button class="close"><i class="fa fa-times"></i></button>
+        </div>
+       </div>
+     </div>
+   </div>
+ </div>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% set title = 'Adminto' %}
+
+<nav class="navbar">
+  <a href="" class="navbar-brand">{{ title }}</a>
+  <button class="navbar-toggle">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="navbar-right">
+    <form action="" class="navbar-form">
+      <input type="text" class="input" placeholder="Search">
+    </form>
+    <button class="navbar-toggle-form toggle-collapse" data-target="#search">
+      <i class="fa fa-search navbar-icon"></i>
+    </button>
+    <ul class="row navbar-row">
+      <li class="col dropdown">
+        <a class="dropdown-toggle" href="">
+          <i class="fa fa-comment navbar-icon"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-large">
+          <li class="dropdown-item dropdown-header">Messages</li>
+          <li class="dropdown-item"><a href="" class="dropdown-link dropdown-media">
+            <img src="../images/user-2.jpg" alt="" class="dropdown-image">
+            <div class="dropdown-media-text">
+              <span class="dropdown-media-content">Hello, please check my jo...</span>
+              <small class="dropdown-media-helper">Reinhard - 2 minutes ago</small>
+            </div>
+          </a></li>
+          <li class="dropdown-item"><a href="" class="dropdown-link dropdown-media">
+            <img src="../images/user-1.jpg" alt="" class="dropdown-image">
+            <div class="dropdown-media-text">
+              <span class="dropdown-media-content">I want us to meet now...</span>
+              <small class="dropdown-media-helper">Ferdi - 12 minutes ago</small>
+            </div>
+          </a></li>
+        </ul>
+      </li>
+      <li class="col dropdown">
+        <a href="" class="dropdown-toggle">
+          <i class="fa fa-bell navbar-icon"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-large">
+          <li class="dropdown-header">Notification</li>
+          <li class="dropdown-item"><a href="" class="dropdown-link">
+            <i class="fa fa-file-alt dropdown-icon text-red-600"></i>
+            <div class="dropdown-media-text">
+              <small class="dropdown-media-helper">5 minutes ago</small>
+              <span class="dropdown-media-content">Rumina made a new feature</span>
+            </div>
+          </a></li>
+          <li class="dropdown-item"><a href="" class="dropdown-link">
+            <i class="fa fa-sign-out-alt dropdown-icon text-green-600"></i>
+            <div class="dropdown-media-text">
+              <small class="dropdown-media-helper">5 minutes ago</small>
+              <span class="dropdown-media-content">Samir leaves the app</span>
+            </div>
+          </a></li>
+        </ul>
+      </li>
+      <li class="col navbar-divider"></li>
+      <li class="col dropdown">
+        <a href="" class="dropdown-toggle">
+          <img src="../images/user-1.jpg" alt="" class="navbar-img">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li class="dropdown-item"><a href="" class="dropdown-link">
+            <i class="fa fa-user text-gray-400 dropdown-icon"></i>
+            Profile
+          </a></li>
+          <li class="dropdown-item">
+            <a href="" class="dropdown-link flex modal-toggle" data-target="#logout">
+              <i class="fa fa-sign-out-alt text-gray-400 dropdown-icon"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="navbar-hidden-form input-prepend hidden" id="search">
+  <input type="text" class="input" placeholder="Search">
+  <button class="button button-blue">Search</button>
+</div>

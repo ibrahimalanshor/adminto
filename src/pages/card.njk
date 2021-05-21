@@ -1,0 +1,67 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Card {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='card', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Card</h1>
+    <p class="main-subtitle">Great component for placing content in there</p>
+  </div>
+
+  <div class="row">
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Default Card</h2>
+        </div>
+        <div class="card-body">
+          <p>This is default card with card header and card footer</p>
+        </div>
+        <div class="card-footer">
+          <button class="button button-blue">Button</button>
+        </div>
+      </div>
+      <div class="card card-blue mb-4">
+        <div class="card-header">
+          <h2 class="card-title h6">Colored Card</h2>
+        </div>
+        <div class="card-body">
+          <p>Card with blue color</p>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header card-addons">
+          <h2 class="h6">Card Header Add-ons</h2>
+          <div>
+            <button class="button button-small button-blue">Edit</button>
+          </div>
+        </div>
+        <div class="card-body">
+          Card Header Add-ons
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="h6">Card Footer Right</h2>
+        </div>
+        <div class="card-body">
+          Card Footer right content
+        </div>
+        <div class="card-footer card-footer-right">
+          <div>
+            <button class="button button-red">Delete</button>
+            <button class="button button-black">Report</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+.modal {
+  @apply fixed top-0 left-0 w-full h-screen items-center justify-center z-20 hidden;
+}
+.modal-backdrop {
+  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50;
+}
+.modal-dialog {
+  @apply relative w-full;
+}
+.modal-body {
+  @apply px-4 mx-auto;
+}
+.modal .card {
+  @apply border-0 shadow;
+}

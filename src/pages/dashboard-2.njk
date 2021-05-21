@@ -1,0 +1,63 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Dashboard V2 {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='dashboard-2', parent = 'dashboard', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Dashboard V2</h1>
+    <p class="main-subtitle">Clean white widget with colored border bottom</p>
+  </div>
+
+  <div class="row">
+    <div class="col w-full sm:w-1/2 lg:w-1/4 mb-4">
+      <div class="widget bg-white border-b-4 border-blue-600">
+        <i class="fa fa-archive widget-icon"></i>
+        <div class="widget-text">
+          <span class="widget-number">
+            22
+          </span>
+          <span class="widget-label">Archive</span>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full sm:w-1/2 lg:w-1/4 mb-4">
+      <div class="widget bg-white border-b-4 border-green-600">
+        <i class="fa fa-user widget-icon"></i>
+        <div class="widget-text">
+          <span class="widget-number">
+            15
+          </span>
+          <span class="widget-label">User</span>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full sm:w-1/2 lg:w-1/4 mb-4">
+      <div class="widget bg-white border-b-4 border-red-600">
+        <i class="fa fa-money-bill widget-icon"></i>
+        <div class="widget-text">
+          <span class="widget-number">
+            22.000
+          </span>
+          <span class="widget-label">Income</span>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full sm:w-1/2 lg:w-1/4 mb-4">
+      <div class="widget bg-white border-b-4 border-yellow-600">
+        <i class="fa fa-calendar widget-icon"></i>
+        <div class="widget-text">
+          <span class="widget-number">
+            3
+          </span>
+          <span class="widget-label">Todos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

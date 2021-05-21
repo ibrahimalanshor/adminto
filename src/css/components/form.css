@@ -1,0 +1,119 @@
+.form {
+  @apply mb-4;
+}
+.form .text-error {
+  @apply text-red-500;
+}
+.form .text-success {
+  @apply text-green-500;
+}
+.form .text-warning {
+  @apply text-yellow-500;
+}
+.form-text {
+  @apply text-sm text-gray-500 block mt-2;
+}
+.form .input {
+  @apply mt-2;
+}
+.input {
+  @apply w-full bg-white border rounded px-3 py-2;
+}
+.input.input-error {
+  @apply border-red-500;
+}
+.input.input-success {
+  @apply border-green-500;
+}
+.input.input-warning {
+  @apply border-yellow-500;
+}
+.input:focus {
+  @apply border-blue-500 ring-2 ring-blue-500 ring-opacity-50 outline-none;
+}
+.input.input-error:focus {
+  @apply border-red-500 ring-2 ring-red-500 ring-opacity-50 outline-none;
+}
+.input.input-success:focus {
+  @apply border-green-500 ring-2 ring-green-500 ring-opacity-50 outline-none;
+}
+.input.input-warning:focus {
+  @apply border-yellow-500 ring-2 ring-yellow-500 ring-opacity-50 outline-none;
+}
+.input:disabled {
+  @apply bg-gray-300 border-gray-400 placeholder-gray-500;
+}
+.input-helper {
+  @apply flex items-center justify-between;
+}
+.input-helper-text {
+  @apply text-sm text-gray-500;
+}
+.checkbox-label, .radio-label {
+  @apply block mb-2;
+}
+.checkbox-control, .radio-control {
+  @apply block mb-1;
+}
+.checkbox-input, .radio-input {
+  @apply hidden;
+}
+.checkbox-box, .radio-box {
+  @apply flex items-center relative;
+}
+.checkbox-box:before {
+  content: '';
+  @apply w-4 h-4 border rounded mr-2;
+}
+.checkbox-input:checked + .checkbox-box:before {
+  @apply bg-blue-600 border-blue-600;
+}
+.checkbox-input:checked + .checkbox-box:after {
+  @apply w-2 h-1 border-l-2 border-b-2 border-white transform -rotate-45 block absolute;
+  content: '';
+  top: 9px;
+  left: 4px;
+}
+.radio-box:before {
+  content: '';
+  @apply w-4 h-4 border rounded-full mr-2;
+}
+.radio-input:checked + .radio-box:before {
+  @apply border-4 border-blue-600;
+}
+.file-input-label {
+  @apply flex border rounded mt-2;
+}
+.file-input-text {
+  @apply py-2 px-4 bg-gray-100 border-r;
+}
+.file-input-upload {
+  @apply py-2 px-4 text-gray-500;
+}
+.file-input {
+  @apply hidden;
+}
+.input-append, .input-prepend {
+  @apply flex;
+}
+.input-append-text, .input-prepend-text {
+  @apply bg-gray-100 border rounded px-4 py-2;
+}
+.input-append-text {
+  @apply rounded-r-none border-r-0;
+}
+.input-append .input {
+  @apply mt-0 rounded-l-none;
+}
+.input-append .button {
+  @apply rounded-r-none;
+}
+.input-prepend-text {
+  @apply rounded-l-none border-l-0;
+}
+.input-prepend .input {
+  @apply mt-0 rounded-r-none;
+}
+.input-prepend .button {
+  @apply rounded-l-none;
+}
