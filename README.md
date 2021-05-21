@@ -10,6 +10,10 @@ Tampilanya sederhana, dilengkapi dengan komponen yang cukup lengkap.
 
 Bisa digunakan di projek website sehingga mempercepat proses pengerjaan.
 
+## Demo
+
+[Live Demo](https://ibrahimalanshor.github.io/adminto)
+
 ## Pengembangan
 
 Adminto masih sangat belia, masih butuh pengembangan lebih lanjut seperti penambahan komponen, integrasi plugin, dll.
