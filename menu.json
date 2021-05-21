@@ -12,7 +12,7 @@
           "childs": [
             {
               "title": "Dashboard V1",
-              "link": "dashboard-1.html",
+              "link": "index.html",
               "active": "dashboard-1"
             },
             {
