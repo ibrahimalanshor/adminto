@@ -1,0 +1,27 @@
+.card {
+  @apply bg-white rounded border;
+}
+.card-header, .card-body, .card-footer {
+  @apply p-4;
+}
+.card-header {
+  @apply border-b;
+}
+.card-footer {
+  @apply border-t;
+}
+.card-blue {
+  @apply bg-blue-600 text-white border-blue-700;
+}
+.card-blue .card-header {
+  @apply border-blue-700;
+}
+.card-blue .card-title {
+  @apply text-white;
+}
+.card-addons {
+  @apply flex items-center justify-between;
+}
+.card-footer-right {
+  @apply flex justify-end;
+}

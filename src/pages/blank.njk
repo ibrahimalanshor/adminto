@@ -1,0 +1,16 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Blank {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='blank', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Blank</h1>
+    <p class="main-subtitle">Blank Page</p>
+  </div>
+{% endblock %}

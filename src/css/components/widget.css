@@ -1,0 +1,39 @@
+.widget {
+  @apply  p-4 rounded flex items-center justify-between;
+}
+.widget.blue {
+  @apply bg-blue-600 text-blue-100;
+}
+.widget.red {
+  @apply bg-red-600 text-red-100;
+}
+.widget.green {
+  @apply bg-green-600 text-green-100;
+}
+.widget.yellow {
+  @apply bg-yellow-600 text-yellow-100;
+}
+.widget-icon {
+  @apply text-4xl;
+}
+.widget.blue .widget-icon {
+  @apply text-blue-700;
+}
+.widget.yellow .widget-icon {
+  @apply text-yellow-700;
+}
+.widget.red .widget-icon {
+  @apply text-red-700;
+}
+.widget.green .widget-icon {
+  @apply text-green-700;
+}
+.widget-text {
+  @apply text-center;
+}
+.widget-number {
+  @apply font-bold text-3xl block;
+}
+.widget-label {
+  @apply font-semibold;
+}

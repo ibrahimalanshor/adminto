@@ -1,0 +1,46 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Sidebar {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='sidebar', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Sidebar</h1>
+    <p class="main-subtitle">Guide to creating sidebar</p>
+  </div>
+
+   <div class="card mb-4">
+     <div class="card-header">
+       <h2 class="h6">Multiple Color</h2>
+     </div>
+     <div class="card-body">
+      <button class="button border text-gray-800 mr-2 toggle-sidebar" data-toggle="white">Sidebar White</button>
+      <button class="button button-black toggle-sidebar" data-toggle="black">Sidebar Black</button>
+     </div>
+   </div>
+{% endblock %}
+
+{% block js %}
+<script>
+  const toggleSidebars = document.querySelectorAll('.toggle-sidebar')
+
+  const toggleClass = function () {
+    const sidebarClass = document.querySelector('.sidebar').classList
+
+    if (this.dataset.toggle === 'white') {
+      sidebarClass.add('sidebar-white')
+    } else {
+      sidebarClass.remove('sidebar-white')
+    }
+  }
+
+  toggleSidebars.forEach(toggleSidebar => {
+    toggleSidebar.onclick = toggleClass
+  })
+</script>
+{% endblock %}

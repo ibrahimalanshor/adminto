@@ -1,0 +1,11 @@
+@import './components/typography.css';
+@import './components/table.css';
+@import './components/button.css';
+@import './components/form.css';
+@import './components/alert.css';
+@import './components/card.css';
+@import './components/dropdown.css';
+@import './components/modal.css';
+@import './components/widget.css';
+@import './components/navbar.css';
+@import './components/sidebar.css';

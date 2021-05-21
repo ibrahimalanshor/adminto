@@ -1,0 +1,46 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Dashboard V1 {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='button', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Button</h1>
+    <p class="main-subtitle">Button with multiple color and size.</p>
+  </div>
+
+  <div class="row">
+    <div class="col w-full lg:w-1/2 mb-4">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="h6">Multiple Color</h2>
+        </div>
+        <div class="card-body flex flex-wrap">
+          <button class="button button-blue mr-2 mb-2">Button Blue</button>
+          <button class="button button-red mr-2 mb-2">Button Red</button>
+          <button class="button button-yellow mr-2 mb-2">Button Yellow</button>
+          <button class="button button-green mr-2 mb-2">Button Green</button>
+          <button class="button button-black mr-2 mb-2">Button Black</button>
+          <button class="button button-black mr-2 mb-2" disabled>Button Disabled</button>
+        </div>
+      </div>
+    </div>
+    <div class="col w-full lg:w-1/2 mb-4">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="h6">Multiple Size</h2>
+        </div>
+        <div class="card-body flex items-start flex-wrap">
+          <button class="button button-blue button-small mr-2 mb-2">Button Small</button>
+          <button class="button button-blue mr-2 mb-2">Button Normal</button>
+          <button class="button button-blue button-large mr-2 mb-2">Button Large</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

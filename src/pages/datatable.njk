@@ -1,0 +1,75 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Table {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='datatable', parent='table', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Datatable</h1>
+    <p class="main-subtitle">Datatable Integration</p>
+  </div>
+
+   <div class="card mb-4">
+     <div class="card-header">
+       <h2 class="h6">Basic Table</h2>
+     </div>
+     <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Jhon Doe</td>
+            <td>+6223743738</td>
+            <td>
+              <button class="button button-small button-green"><i class="fa fa-edit"></i></button>
+              <button class="button button-small button-red"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Milikilah</td>
+            <td>+827231282</td>
+            <td>
+              <button class="button button-small button-green"><i class="fa fa-edit"></i></button>
+              <button class="button button-small button-red"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Arima</td>
+            <td>+321921319</td>
+            <td>
+              <button class="button button-small button-green"><i class="fa fa-edit"></i></button>
+              <button class="button button-small button-red"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+   </div>
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+{% endblock %}
+
+{% block js %}
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script>
+      $('table').DataTable()
+    </script>
+{% endblock %}

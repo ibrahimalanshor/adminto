@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  {% include "partials/head.njk" %}
+
+  <title>{% block title %} {% endblock %}</title>
+
+  {% block css %} {% endblock %}
+
+</head>
+<body>
+
+  {% include "partials/navbar.njk" %}
+
+  {% block sidebar %} {% endblock %}
+
+  <main class="main">
+    {% block content %} {% endblock %}
+  </main>
+
+  {% include "partials/logout.njk" %}
+
+  <script src="../js/script.js"></script>
+    
+  {% block js %} {% endblock %}
+
+</body>
+</html>

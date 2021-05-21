@@ -1,0 +1,25 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Modal {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='modal', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Modal</h1>
+    <p class="main-subtitle">Guide to creating modal</p>
+  </div>
+
+   <div class="card mb-4">
+     <div class="card-header">
+       <h2 class="h6">Modal</h2>
+     </div>
+     <div class="card-body">
+      <button class="button button-blue modal-toggle" data-target="#basic-modal">Basic Modal</button>
+     </div>
+   </div>
+{% endblock %}

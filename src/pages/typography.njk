@@ -1,0 +1,34 @@
+{% import "component/sidebar.njk" as sidebar %}
+
+{% extends "layouts/app.njk" %}
+
+{% block title %} Typography {% endblock %}
+
+{% block sidebar %}
+  {{ sidebar.sidebar(active='typography', menus = menus) }}
+{% endblock %}
+
+{% block content %}
+  <div class="main-header">
+    <h1 class="h2 main-title">Typography</h1>
+    <p class="main-subtitle">Guide to creating typography</p>
+  </div>
+
+  <div class="row">
+    <div class="col w-full lg:w-1/2">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h2 class="h6">Heading</h2>
+        </div>
+        <div class="card-body">
+          <h1 class="h1">H1</h1>
+          <h2 class="h2">H2</h2>
+          <h3 class="h3">H3</h3>
+          <h4 class="h4">H4</h4>
+          <h5 class="h5">H5</h5>
+          <h6 class="h6">H6</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
