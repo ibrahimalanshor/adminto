@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[!Adminto](screenshot.png)
+![Adminto](screenshot.png)
 
 Adminto adalah template admin sederhana siap pakai untuk semuanya, dibuat dengan tailwindcss.
 
