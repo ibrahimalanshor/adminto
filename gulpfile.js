@@ -43,7 +43,9 @@ const jsDoc = () => {
 
 const html = () => {
   return src('./src/pages/**/*.njk')
-    .pipe(data(() => require('./menu.json')))
+    .pipe(data(() => ({
+      menus: require('./menu.json')
+    })))
     .pipe(nunjucks({
       path: ['src/templates']
     }))

@@ -1,139 +1,137 @@
-{
-  "menus": [
-    {
-      "title": "Menu",
-      "items": [
-        {
-          "title": "Dashboard",
-          "icon": "tachometer-alt",
-          "link": "",
-          "active": "dashboard",
-          "hasChild": true,
-          "childs": [
-            {
-              "title": "Dashboard V1",
-              "link": "index.html",
-              "active": "dashboard-1"
-            },
-            {
-              "title": "Dashboard V2",
-              "link": "dashboard-2.html",
-              "active": "dashboard-2"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Components",
-      "items": [
-        {
-          "title": "Button",
-          "icon": "square",
-          "link": "button.html",
-          "active": "button"
-        },
-        {
-          "title": "Card",
-          "icon": "archive",
-          "link": "card.html",
-          "active": "card"
-        },
-        {
-          "title": "Form",
-          "icon": "file-alt",
-          "link": "form.html",
-          "active": "form"
-        },
-        {
-          "title": "Alert",
-          "icon": "bell",
-          "link": "alert.html",
-          "active": "alert"
-        },
-        {
-          "title": "Typography",
-          "icon": "file",
-          "link": "typography.html",
-          "active": "typography"
-        }
-      ]
-    },
-    {
-      "title": "UI Components",
-      "items": [
-        {
-          "title": "Chart",
-          "icon": "chart-bar",
-          "link": "chart.html",
-          "active": "chart"
-        },
-        {
-          "title": "Table",
-          "icon": "table",
-          "link": "",
-          "active": "table",
-          "hasChild": true,
-          "childs": [
-            {
-              "title": "Basic Table",
-              "link": "table.html",
-              "active": "basic-table"
-            },
-            {
-              "title": "Data Table",
-              "link": "datatable.html",
-              "active": "datatable"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Theme",
-      "items": [
-        {
-          "title": "Navbar",
-          "icon": "window-maximize",
-          "link": "navbar.html",
-          "active": "navbar"
-        },
-        {
-          "title": "Sidebar",
-          "icon": "tasks",
-          "link": "sidebar.html",
-          "active": "sidebar"
-        }
-      ]
-    },
-    {
-      "title": "Pages",
-      "items": [
-        {
-          "title": "Login",
-          "icon": "door-open",
-          "link": "login.html",
-          "active": "login"
-        },
-        {
-          "title": "Register",
-          "icon": "door-closed",
-          "link": "register.html",
-          "active": "register"
-        },
-        {
-          "title": "Blank",
-          "icon": "sticky-note",
-          "link": "blank.html",
-          "active": "blank"
-        },
-        {
-          "title": "Not Found",
-          "icon": "exclamation-triangle",
-          "link": "not-found.html",
-          "active": "not-found"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "title": "Menu",
+    "items": [
+      {
+        "title": "Dashboard",
+        "icon": "tachometer-alt",
+        "link": "",
+        "active": "dashboard",
+        "hasChild": true,
+        "childs": [
+          {
+            "title": "Dashboard V1",
+            "link": "index.html",
+            "active": "dashboard-1"
+          },
+          {
+            "title": "Dashboard V2",
+            "link": "dashboard-2.html",
+            "active": "dashboard-2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Components",
+    "items": [
+      {
+        "title": "Button",
+        "icon": "square",
+        "link": "button.html",
+        "active": "button"
+      },
+      {
+        "title": "Card",
+        "icon": "archive",
+        "link": "card.html",
+        "active": "card"
+      },
+      {
+        "title": "Form",
+        "icon": "file-alt",
+        "link": "form.html",
+        "active": "form"
+      },
+      {
+        "title": "Alert",
+        "icon": "bell",
+        "link": "alert.html",
+        "active": "alert"
+      },
+      {
+        "title": "Typography",
+        "icon": "file",
+        "link": "typography.html",
+        "active": "typography"
+      }
+    ]
+  },
+  {
+    "title": "UI Components",
+    "items": [
+      {
+        "title": "Chart",
+        "icon": "chart-bar",
+        "link": "chart.html",
+        "active": "chart"
+      },
+      {
+        "title": "Table",
+        "icon": "table",
+        "link": "",
+        "active": "table",
+        "hasChild": true,
+        "childs": [
+          {
+            "title": "Basic Table",
+            "link": "table.html",
+            "active": "basic-table"
+          },
+          {
+            "title": "Data Table",
+            "link": "datatable.html",
+            "active": "datatable"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Theme",
+    "items": [
+      {
+        "title": "Navbar",
+        "icon": "window-maximize",
+        "link": "navbar.html",
+        "active": "navbar"
+      },
+      {
+        "title": "Sidebar",
+        "icon": "tasks",
+        "link": "sidebar.html",
+        "active": "sidebar"
+      }
+    ]
+  },
+  {
+    "title": "Pages",
+    "items": [
+      {
+        "title": "Login",
+        "icon": "door-open",
+        "link": "login.html",
+        "active": "login"
+      },
+      {
+        "title": "Register",
+        "icon": "door-closed",
+        "link": "register.html",
+        "active": "register"
+      },
+      {
+        "title": "Blank",
+        "icon": "sticky-note",
+        "link": "blank.html",
+        "active": "blank"
+      },
+      {
+        "title": "Not Found",
+        "icon": "exclamation-triangle",
+        "link": "not-found.html",
+        "active": "not-found"
+      }
+    ]
+  }
+]
