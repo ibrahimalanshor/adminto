@@ -59,6 +59,23 @@
     ]
   },
   {
+    "title": "Interaction",
+    "items": [
+      {
+        "title": "Modal",
+        "icon": "object-group",
+        "link": "modal.html",
+        "active": "modal"
+      },
+      {
+        "title": "Dropdown",
+        "icon": "list-alt",
+        "link": "dropdown.html",
+        "active": "dropdown"
+      }
+    ]
+  },
+  {
     "title": "UI Components",
     "items": [
       {

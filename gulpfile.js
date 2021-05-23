@@ -84,7 +84,7 @@ const devScript = () => {
 }
 
 const dev = () => {
-  watch('./src/**/*.njk', html)
+  watch(['./src/**/*.njk', './menu.json'], html)
   watch('./src/**/*.css', css)
   watch('./src/**/*.js', js)
   watch('./src/images/**/*', image)

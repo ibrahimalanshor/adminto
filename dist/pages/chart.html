@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../css/style.css">
 <link rel="icon" href="../images/favicon/favicon.ico">
 
-  <title> Navbar </title>
+  <title> Chart </title>
 
    
 
@@ -235,7 +235,7 @@
       <li class="sidebar-title">UI Components</li>
       
         <li>
-          <a href="chart.html" class="sidebar-menu    ">
+          <a href="chart.html" class="sidebar-menu  active  ">
             <div>
               <i class="fa fa-chart-bar sidebar-icon"></i>
               Chart
@@ -282,7 +282,7 @@
       <li class="sidebar-title">Theme</li>
       
         <li>
-          <a href="navbar.html" class="sidebar-menu  active  ">
+          <a href="navbar.html" class="sidebar-menu    ">
             <div>
               <i class="fa fa-window-maximize sidebar-icon"></i>
               Navbar
@@ -362,19 +362,60 @@
   <main class="main">
     
   <div class="main-header">
-    <h1 class="h2 main-title">Navbar</h1>
-    <p class="main-subtitle">Guide to creating navbar</p>
+    <h1 class="h2 main-title">Chart</h1>
+    <p class="main-subtitle">We using <a href="https://www.chartjs.org/">chart.js</a> for making chart</p>
   </div>
 
-   <div class="card mb-4">
-     <div class="card-header">
-       <h2 class="h6">Multiple Color</h2>
-     </div>
-     <div class="card-body">
-      <button class="button border text-gray-800 mr-2 toggle-navbar" data-toggle="white">Navbar White</button>
-      <button class="button button-black toggle-navbar" data-toggle="black">Navbar Black</button>
-     </div>
-   </div>
+  <div class="row">
+    <div class="col w-full sm:w-1/2 mb-4">
+      <div class="card">
+       <div class="card-header">
+         <h2 class="h6">Line Chart</h2>
+       </div>
+       <div class="card-body">
+         <div class="chart">
+           <canvas class="chart" id="line"></canvas>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col w-full sm:w-1/2 mb-4">
+      <div class="card">
+       <div class="card-header">
+         <h2 class="h6">Bar Chart</h2>
+       </div>
+       <div class="card-body">
+         <div class="chart">
+           <canvas class="chart" id="bar"></canvas>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col w-full sm:w-1/2 mb-4">
+      <div class="card">
+       <div class="card-header">
+         <h2 class="h6">Doughnut Chart</h2>
+       </div>
+       <div class="card-body">
+         <div class="chart">
+           <canvas class="chart" id="doughnut"></canvas>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col w-full sm:w-1/2 mb-4">
+      <div class="card">
+       <div class="card-header">
+         <h2 class="h6">Pie Chart</h2>
+       </div>
+       <div class="card-body">
+         <div class="chart">
+           <canvas class="chart" id="pie"></canvas>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 
   </main>
 
@@ -406,23 +447,58 @@
   <script src="../js/script.js"></script>
     
   
-<script>
-  const toggleNavbars = document.querySelectorAll('.toggle-navbar')
-
-  const toggleClass = function () {
-    const navbarClass = document.querySelector('.navbar').classList
-
-    if (this.dataset.toggle === 'white') {
-      navbarClass.remove('navbar-dark')
-    } else {
-      navbarClass.add('navbar-dark')
-    }
-  }
-
-  toggleNavbars.forEach(toggleNavbar => {
-    toggleNavbar.onclick = toggleClass
-  })
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const lineChart = new Chart(document.querySelector('#line'), {
+      type: 'line',
+      data: {
+        labels: ['jan', 'feb', 'mar', 'apr', 'may', 'jun'],
+        datasets: [{
+          label: 'Data',
+          backgroundColor: '#DBEAFE',
+          borderColor: '#3B82F6',
+          data: [10, 5, 12, 22, 34, 5]
+        }]
+      }
+    })
+    const barChart = new Chart(document.querySelector('#bar'), {
+      type: 'bar',
+      data: {
+        labels: ['jan', 'feb', 'mar', 'apr', 'may', 'jun'],
+        datasets: [{
+          label: 'Data',
+          backgroundColor: '#FDE68A',
+          borderColor: '#F59E0B',
+          borderWidth: 1,
+          data: [10, 5, 12, 22, 34, 5]
+        }]
+      }
+    })
+    const doughnutChart = new Chart(document.querySelector('#doughnut'), {
+      type: 'doughnut',
+      data: {
+        labels: ['jan', 'feb', 'mar'],
+        datasets: [{
+          label: 'Data',
+          backgroundColor: ['#F87171', '#FBBF24', '#34D399'],
+          borderWidth: 1,
+          data: [22, 34, 5]
+        }]
+      }
+    })
+    const pieChart = new Chart(document.querySelector('#pie'), {
+      type: 'pie',
+      data: {
+        labels: ['jan', 'feb', 'mar'],
+        datasets: [{
+          label: 'Data',
+          backgroundColor: ['#F87171', '#FBBF24', '#34D399'],
+          borderWidth: 1,
+          data: [22, 34, 5]
+        }]
+      }
+    })
+  </script>
 
 
 </body>
