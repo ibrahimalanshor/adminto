@@ -4,7 +4,7 @@ module.exports = {
    options: {
     safelist: { standard: [
       /^(text|bg)-(red|green|blue|gray|yellow)/,
-      /^(w-|sm:w-|md:w-|lg:w-|xl:w-).*[/][4]$/,
+      /^(w-|sm:w-|md:w-|lg:w-|xl:w-).*([/][234]|full)$/,
       /^(m|p)(y|x|t|l|r|b)-[1-4]$/,
       /^(m|p)-[1-4]$/,
     ] }
