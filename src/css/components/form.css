@@ -19,6 +19,12 @@
 .input {
   @apply w-full bg-white border rounded px-3 py-2;
 }
+.input.input-small {
+  @apply py-1 px-2;
+}
+.input.input-large {
+  @apply py-3 px-4;
+}
 .input.input-error {
   @apply border-red-500;
 }
