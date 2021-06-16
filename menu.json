@@ -55,6 +55,12 @@
         "icon": "file",
         "link": "typography.html",
         "active": "typography"
+      },
+      {
+        "title": "Pagination",
+        "icon": "angle-double-left",
+        "link": "pagination.html",
+        "active": "pagination"
       }
     ]
   },

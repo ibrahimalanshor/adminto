@@ -1,0 +1,21 @@
+.pagination {
+  @apply flex;
+}
+.pagination-item:first-child .pagination-link {
+  @apply rounded-l;
+}
+.pagination-item:last-child .pagination-link {
+  @apply border-r rounded-r;
+}
+.pagination-link {
+  @apply px-3 py-2 block bg-white text-gray-500 border border-r-0;
+}
+.pagination-link.active, .pagination-link.active:hover {
+  @apply bg-blue-600 text-white;
+}
+a.pagination-link {
+  @apply text-blue-600;
+}
+a.pagination-link:hover {
+  @apply bg-gray-100;
+}
